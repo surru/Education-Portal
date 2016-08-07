@@ -40,7 +40,7 @@
 
             <div class="collapse bs-navbar-collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li style="margin-left:10px;" class="" ><a href="home.php">Home</a></li>                    <li style="margin-left:10px;" class="active" ><a href="videos.php">Videos</a></li>
+                    <li style="margin-left:10px;" class="" ><a href="index.php">Home</a></li>                    <li style="margin-left:10px;" class="active" ><a href="videos.php">Videos</a></li>
                     <li style="margin-left:10px;" class="active" ><a href="books.php">Books</a></li>
                     <li style="margin-left:10px;" class="active" ><a href="about.php">About</a></li>
                     <li style="margin-left:10px;" class="active" ><a href="contact.php">Contact Us</a></li>
