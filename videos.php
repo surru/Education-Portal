@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-include('header.php')
+include('header.php');
+include('Setup/connection_config.php');
 ?>
 
 <head>
@@ -40,12 +41,12 @@ include('header.php')
 <br>
 </center>
 
-<a href="algov.php">
+<a href="algo.php">
 <h2>Algorithms</h2>
 </a>
 <?php
 
-$conn = new mysqli("localhost", "root", "admin","Video");
+$conn = new mysqli($servername, $username, $password,"Video");
 
 $sql = "SELECT * FROM Introduction_to_Algorithms LIMIT 2";
 $result = $conn->query($sql);
@@ -68,17 +69,17 @@ if ($result->num_rows > 0)
 
 ?>
 <div id="right">
-<a href="algov.php">
+<a href="algo.php">
 ..... more videos
 </a>
 </div>
 
-<a href="cv.php">
+<a href="c.php">
 <h2>C Programming</h2>
 </a>
 <?php
 
-$conn = new mysqli("localhost", "root", "admin","Video");
+$conn = new mysqli($servername, $username, $password,"Video");
 
 $sql = "SELECT * FROM C LIMIT 2";
 $result = $conn->query($sql);
@@ -100,18 +101,18 @@ if ($result->num_rows > 0)
 
 ?>
 <div id="right">
-<a href="cv.php">
+<a href="c.php">
 ..... more videos
 </a>
 </div>
 
 
-<a href="gimpv.php">
+<a href="gimp.php">
 <h2>GIMP</h2>
 </a>
 <?php
 
-$conn = new mysqli("localhost", "root", "admin","Video");
+$conn = new mysqli($servername, $username, $password,"Video");
 
 $sql = "SELECT * FROM GIMP LIMIT 2";
 $result = $conn->query($sql);
@@ -134,18 +135,18 @@ if ($result->num_rows > 0)
 
 ?>
 <div id="right">
-<a href="gimpv.php">
+<a href="gimp.php">
 ..... more videos
 </a>
 </div>
 
 
-<a href="javav.php">
+<a href="java.php">
 <h2>Java Programming</h2>
 </a>
 <?php
 
-$conn = new mysqli("localhost", "root", "admin","Video");
+$conn = new mysqli($servername, $username, $password,"Video");
 
 $sql = "SELECT * FROM Java LIMIT 2";
 $result = $conn->query($sql);
@@ -168,19 +169,19 @@ if ($result->num_rows > 0)
 
 ?>
 <div id="right">
-<a href="javav.php">
+<a href="java.php">
 ..... more videos
 </a>
 </div>
 
 
 
-<a href="latexv.php">
+<a href="latex.php">
 <h2>Latex</h2>
 </a>
 <?php
 
-$conn = new mysqli("localhost", "root", "admin","Video");
+$conn = new mysqli($servername, $username, $password,"Video");
 
 $sql = "SELECT * FROM Latex LIMIT 2";
 $result = $conn->query($sql);
@@ -203,19 +204,19 @@ if ($result->num_rows > 0)
 
 ?>
 <div id="right">
-<a href="latexv.php">
+<a href="latex.php">
 ..... more videos
 </a>
 </div>
 
 
 
-<a href="phpv.php">
+<a href="php.php">
 <h2>PHP</h2>
 </a>
 <?php
 
-$conn = new mysqli("localhost", "root", "admin","Video");
+$conn = new mysqli($servername, $username, $password,"Video");
 
 $sql = "SELECT * FROM PHP LIMIT 2";
 $result = $conn->query($sql);
@@ -238,18 +239,18 @@ if ($result->num_rows > 0)
 
 ?>
 <div id="right">
-<a href="phpv.php">
+<a href="php.php">
 ..... more videos
 </a>
 </div>
 
 
-<a href="pythonv.php">
+<a href="python.php">
 <h2>Python</h2>
 </a>
 <?php
 
-$conn = new mysqli("localhost", "root", "admin","Video");
+$conn = new mysqli($servername, $username, $password,"Video");
 
 $sql = "SELECT * FROM Python LIMIT 2";
 $result = $conn->query($sql);
@@ -272,7 +273,7 @@ if ($result->num_rows > 0)
 
 ?>
 <div id="right">
-<a href="pythonv.php">
+<a href="python.php">
 ..... more videos
 </a>
 </div>
