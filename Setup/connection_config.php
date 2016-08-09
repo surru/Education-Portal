@@ -2,5 +2,5 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "priya";
+$password = "admin";
 ?>
